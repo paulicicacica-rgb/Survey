@@ -7,7 +7,7 @@ export default function Home() {
       <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-green-100">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src="/manus-storage/surveoo-prelander-logo_0123d4cc.png" alt="Surveoo" className="w-10 h-10" />
+            <img src="/images/logo.webp" alt="Surveoo" className="w-10 h-10 object-contain" />
             <div>
               <h1 className="text-xl font-bold text-green-700">Surveoo</h1>
               <p className="text-xs text-green-600">Earn on Your Terms</p>
@@ -46,7 +46,7 @@ export default function Home() {
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-br from-green-200 to-blue-200 rounded-3xl opacity-30 blur-2xl"></div>
               <img 
-                src="/manus-storage/hero-image-mom-phone_aa872f93.png" 
+                src="/images/hero-mom-phone.webp"
                 alt="Single mom earning money from phone" 
                 className="relative w-full h-auto rounded-3xl shadow-2xl object-cover"
               />
@@ -95,7 +95,7 @@ export default function Home() {
             <div className="relative">
               <div className="absolute -inset-4 bg-white rounded-3xl opacity-40 blur-2xl"></div>
               <img 
-                src="/manus-storage/content-image-community_cdcc5cb0.png" 
+                src="/images/community.webp"
                 alt="Community of single moms" 
                 className="relative w-full h-auto rounded-3xl shadow-xl"
               />
@@ -123,7 +123,7 @@ export default function Home() {
             <div className="order-2 lg:order-1 relative">
               <div className="absolute -inset-4 bg-gradient-to-br from-amber-100 to-green-100 rounded-3xl opacity-30 blur-2xl"></div>
               <img 
-                src="/manus-storage/content-image-flexibility_2f809cb4.png" 
+                src="/images/flexibility.webp"
                 alt="Flexibility in earning" 
                 className="relative w-full h-auto rounded-3xl shadow-xl"
               />
