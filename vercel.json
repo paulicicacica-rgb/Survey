@@ -3,8 +3,9 @@
   "buildCommand": "vite build && pnpm exec tsx scripts/generate-static-meta.ts",
   "outputDirectory": "dist/public",
   "installCommand": "pnpm install --no-frozen-lockfile",
+  "cleanUrls": true,
   "rewrites": [
     { "source": "/newself", "destination": "/newself.html" },
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/:path*", "destination": "/index.html" }
   ]
 }
