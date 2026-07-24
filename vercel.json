@@ -1,9 +1,10 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "vite build",
+  "buildCommand": "vite build && pnpm exec tsx scripts/generate-static-meta.ts",
   "outputDirectory": "dist/public",
   "installCommand": "pnpm install --no-frozen-lockfile",
   "rewrites": [
+    { "source": "/newself", "destination": "/newself.html" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
