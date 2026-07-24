@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 import { Check, ArrowRight, Shield, Clock, Users, HeartPulse } from "lucide-react";
 
 const AFFILIATE_LINK =
-  "https://afflat3e1.com/trk/lnk/8613E3A5-B445-46B2-BA81-CD563CDBA746/?o=32359&c=918277&a=798445&k=4D4B4D5ECC2D9D1C8A7E83017644E570&l=38108&s1=ns";
+  "https://afflat3d2.com/trk/lnk/8613E3A5-B445-46B2-BA81-CD563CDBA746/?o=32072&c=918277&a=798445&k=7E24477C00342A90EFE176522B86E663&l=37601&s1=fb1";
 
 function Logo({ className = "w-8 h-8" }: { className?: string }) {
   return (
