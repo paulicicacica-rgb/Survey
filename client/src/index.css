@@ -125,7 +125,7 @@
   --sidebar-ring: oklch(0.488 0.243 264.376);
 }
 
-/* Scoped theme for the /newswlf (newself) landing page */
+/* Scoped theme for the /newself landing page */
 .newself-theme {
   --primary: #0F5A8C;
   --primary-foreground: #FFFFFF;
