@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Star, Check, ArrowRight, Shield, Clock, Users, HeartPulse, Pill, Sparkles } from "lucide-react";
+import { Check, ArrowRight, Shield, Clock, Users, HeartPulse } from "lucide-react";
 
 const AFFILIATE_LINK =
   "https://afflat3e1.com/trk/lnk/8613E3A5-B445-46B2-BA81-CD563CDBA746/?o=32359&c=918277&a=798445&k=4D4B4D5ECC2D9D1C8A7E83017644E570&l=38108&s1=ns";
@@ -39,78 +39,21 @@ export default function NewSelf() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-white via-blue-50/30 to-white pt-20 pb-32 border-b-2 border-primary/10">
-        <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left: Hero Text */}
-            <div className="space-y-8">
-              {/* Trust Badge */}
-              <div className="inline-flex items-center gap-2 bg-yellow-50 px-4 py-2 rounded-full border border-yellow-200">
-                <div className="flex gap-1">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
-                <span className="text-sm font-medium text-gray-700">4.5 out of 5 on Trustpilot</span>
-              </div>
-
-              {/* Main Headline */}
-              <div className="space-y-4">
-                <div className="flex items-center gap-2 mb-2">
-                  <div className="w-1 h-8 bg-accent rounded-full"></div>
-                  <span className="text-sm font-semibold text-accent uppercase tracking-wide">Licensed Medical Care</span>
-                </div>
-                <h1 className="text-5xl lg:text-6xl font-bold text-primary leading-tight">
-                  Medical Weight Loss, Delivered
-                </h1>
-                <p className="text-xl text-gray-600 leading-relaxed">
-                  Chat with a licensed doctor. Get prescribed. Receive medication. All online, in days—not months.
-                </p>
-              </div>
-
-              {/* Value Props */}
-              <div className="space-y-3 pt-4">
-                <div className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-secondary flex-shrink-0 mt-1" />
-                  <span className="text-gray-700">Licensed doctors available 24/7</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-secondary flex-shrink-0 mt-1" />
-                  <span className="text-gray-700">Medication compounded to your exact dosage</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-secondary flex-shrink-0 mt-1" />
-                  <span className="text-gray-700">Discreet shipping included</span>
-                </div>
-              </div>
-
-              {/* CTA */}
-              <div className="pt-4">
-                <Button
-                  size="lg"
-                  className="bg-accent hover:bg-accent/90 text-white font-semibold text-lg px-8 py-6 rounded-lg shadow-lg hover:shadow-xl transition-all"
-                  onClick={() => window.open(AFFILIATE_LINK, "_blank")}
-                >
-                  Start My Free Visit <ArrowRight className="ml-2 w-5 h-5" />
-                </Button>
-                <p className="text-sm text-gray-500 mt-3">No credit card required. Consultation is completely free.</p>
-              </div>
-            </div>
-
-            {/* Right: Hero Visual */}
-            <div className="relative h-96 lg:h-full min-h-96 rounded-2xl overflow-hidden shadow-2xl border-2 border-primary/10 bg-gradient-to-br from-primary via-primary/90 to-secondary flex items-center justify-center">
-              <Sparkles className="absolute top-8 right-10 w-8 h-8 text-white/30" />
-              <Sparkles className="absolute bottom-24 left-10 w-6 h-6 text-white/20" />
-              <div className="w-32 h-32 rounded-full bg-white/15 flex items-center justify-center">
-                <Pill className="w-16 h-16 text-white" />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
-              <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent text-white">
-                <p className="text-sm font-semibold">✓ Licensed Doctors Available 24/7</p>
-                <p className="text-sm font-semibold">✓ Medication in 3-5 Business Days</p>
-              </div>
-            </div>
-          </div>
+      <section className="relative overflow-hidden border-b-2 border-primary/10">
+        <div className="relative w-full">
+          <img
+            src="/images/newself-hero.png"
+            alt="Your weight doesn't define you. Your results do. Personalized weight loss support, real results, real life."
+            className="w-full h-auto block"
+          />
+          <a
+            href={AFFILIATE_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Start My Free Visit"
+            className="absolute cursor-pointer"
+            style={{ left: "5.5%", top: "66.5%", width: "26%", height: "6%" }}
+          />
         </div>
       </section>
 
