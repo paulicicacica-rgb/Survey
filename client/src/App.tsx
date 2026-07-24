@@ -7,6 +7,7 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import Signup from "./pages/Signup";
 import SignUpAP1 from "./pages/SignUpAP1";
+import NewSelf from "./pages/NewSelf";
 
 
 function Router() {
@@ -15,6 +16,7 @@ function Router() {
       <Route path={"/"} component={Home} />
       <Route path={"/signup"} component={Signup} />
       <Route path={"/sign-up"} component={SignUpAP1} />
+      <Route path={"/newswlf"} component={NewSelf} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

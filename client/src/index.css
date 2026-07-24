@@ -125,6 +125,41 @@
   --sidebar-ring: oklch(0.488 0.243 264.376);
 }
 
+/* Scoped theme for the /newswlf (newself) landing page */
+.newself-theme {
+  --primary: #0F5A8C;
+  --primary-foreground: #FFFFFF;
+  --secondary: #7BA89F;
+  --secondary-foreground: #FFFFFF;
+  --accent: #D4A574;
+  --accent-foreground: #FFFFFF;
+  --background: #FFFFFF;
+  --foreground: #1A1A1A;
+  --card: #F9F8F6;
+  --card-foreground: #1A1A1A;
+  --popover: #FFFFFF;
+  --popover-foreground: #1A1A1A;
+  --muted: #E8DCC8;
+  --muted-foreground: #666666;
+  --destructive: #DC2626;
+  --destructive-foreground: #FFFFFF;
+  --border: #E8DCC8;
+  --input: #F5F1E8;
+  --ring: #0F5A8C;
+  --radius: 0.65rem;
+  font-family: "Inter", sans-serif;
+}
+
+.newself-theme h1,
+.newself-theme h2,
+.newself-theme h3,
+.newself-theme h4,
+.newself-theme h5,
+.newself-theme h6 {
+  font-family: "Sora", sans-serif;
+  font-weight: 600;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
