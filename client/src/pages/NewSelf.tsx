@@ -5,12 +5,6 @@ import { Check, ArrowRight, Shield, Clock, Users, HeartPulse } from "lucide-reac
 const AFFILIATE_LINK =
   "https://afflat3e1.com/trk/lnk/8613E3A5-B445-46B2-BA81-CD563CDBA746/?o=32359&c=918277&a=798445&k=4D4B4D5ECC2D9D1C8A7E83017644E570&l=38108&s1=ns";
 
-const doctors = [
-  { name: "Dr. Sarah Chen", credential: "MD, Internal Medicine", specialty: "Weight Management" },
-  { name: "Dr. James Rodriguez", credential: "MD, Endocrinology", specialty: "Metabolic Health" },
-  { name: "Dr. Emily Watson", credential: "MD, Family Medicine", specialty: "Preventive Care" },
-];
-
 function Logo({ className = "w-8 h-8" }: { className?: string }) {
   return (
     <div className={`${className} bg-primary rounded-full flex items-center justify-center flex-shrink-0`}>
@@ -33,7 +27,7 @@ export default function NewSelf() {
             className="bg-primary hover:bg-primary/90 text-white"
             onClick={() => window.open(AFFILIATE_LINK, "_blank")}
           >
-            Start Free Visit
+            See My Options
           </Button>
         </div>
       </header>
@@ -50,30 +44,10 @@ export default function NewSelf() {
             href={AFFILIATE_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Start My Free Visit"
+            aria-label="See My Options"
             className="absolute cursor-pointer"
             style={{ left: "5.5%", top: "66.5%", width: "26%", height: "6%" }}
           />
-        </div>
-      </section>
-
-      {/* Doctor Credibility Section */}
-      <section className="py-16 bg-white border-b border-border">
-        <div className="container">
-          <div className="mb-12">
-            <h2 className="text-3xl font-bold text-primary mb-2">Your Care Team</h2>
-            <p className="text-gray-600">Licensed physicians with years of weight management expertise</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {doctors.map((doctor, idx) => (
-              <div key={idx} className="p-6 bg-gradient-to-br from-blue-50 to-blue-50/50 rounded-lg border border-primary/10 hover:border-primary/30 transition-colors">
-                <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center text-lg font-bold mb-4">👨‍⚕️</div>
-                <h3 className="font-semibold text-gray-900 mb-1">{doctor.name}</h3>
-                <p className="text-sm text-primary font-medium mb-2">{doctor.credential}</p>
-                <p className="text-sm text-gray-600">{doctor.specialty}</p>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -87,9 +61,9 @@ export default function NewSelf() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { step: 1, title: "Chat with a Doctor", desc: "Start a free consultation with a licensed physician. No appointment needed.", icon: Users },
-              { step: 2, title: "Get Prescribed", desc: "If approved, receive your personalized prescription within hours.", icon: Check },
-              { step: 3, title: "Receive Medication", desc: "Your medication arrives discreetly at your door in 3-5 business days.", icon: Clock },
+              { step: 1, title: "Answer a Few Questions", desc: "Tell us about your goals so we can match you with a telehealth provider.", icon: Users },
+              { step: 2, title: "Get Matched", desc: "We connect you with a partner provider's online consultation to check eligibility.", icon: Check },
+              { step: 3, title: "Provider Ships to You", desc: "If prescribed, your provider ships medication directly and discreetly.", icon: Clock },
             ].map((item) => {
               const Icon = item.icon;
               return (
@@ -113,14 +87,14 @@ export default function NewSelf() {
       <section className="py-20 bg-gray-50">
         <div className="container">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-primary mb-4">Why Patients Choose newself</h2>
+            <h2 className="text-4xl font-bold text-primary mb-4">Why Explore Through newself</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { icon: Shield, title: "Licensed Doctors", desc: "All consultations with board-certified physicians" },
-              { icon: Clock, title: "Fast Delivery", desc: "Medication in your hands in 3-5 business days" },
-              { icon: Users, title: "Trusted by Thousands", desc: "4.5★ rating from real patients on Trustpilot" },
+              { icon: Shield, title: "Telehealth Providers", desc: "We match you with providers who specialize in medical weight loss" },
+              { icon: Clock, title: "Fast Online Process", desc: "Get matched and hear back in as little as a few hours" },
+              { icon: Users, title: "Free to Explore", desc: "No cost or obligation to see what you may qualify for" },
             ].map((item, idx) => {
               const Icon = item.icon;
               return (
@@ -139,13 +113,13 @@ export default function NewSelf() {
       <section className="py-20 bg-primary text-white">
         <div className="container text-center">
           <h2 className="text-4xl font-bold mb-4">Ready to Become Your newself?</h2>
-          <p className="text-xl mb-8 text-blue-100">Start your free consultation today. No credit card required.</p>
+          <p className="text-xl mb-8 text-blue-100">See if you qualify for a provider consultation. No credit card required.</p>
           <Button
             size="lg"
             className="bg-accent hover:bg-accent/90 text-white font-semibold text-lg px-8 py-6"
             onClick={() => window.open(AFFILIATE_LINK, "_blank")}
           >
-            Start Free Visit <ArrowRight className="ml-2 w-5 h-5" />
+            See My Options <ArrowRight className="ml-2 w-5 h-5" />
           </Button>
         </div>
       </section>
@@ -186,6 +160,9 @@ export default function NewSelf() {
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8">
+            <p className="text-xs text-center mb-2">
+              newself is an independent site and is not a medical provider. We may earn a commission when you sign up with a partner provider linked on this page.
+            </p>
             <p className="text-sm text-center">
               © 2026 newself. All rights reserved. newself is not a substitute for professional medical advice.
             </p>
