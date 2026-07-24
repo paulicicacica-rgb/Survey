@@ -14,7 +14,7 @@ export const PAGE_META: Record<string, PageMeta> = {
     title: "newself",
     description: "Technology made for you. Get back to the old you.",
     ogTitle: "Technology Made For You",
-    ogDescription: "Get back to the old you. Free to explore, no commitment.",
+    ogDescription: "Get back to the old you — the one who felt like themselves.",
     ogUrl: "https://www.helpmyform.online/newself",
     ogImage: "https://www.helpmyform.online/images/newself-hero.png",
   },
