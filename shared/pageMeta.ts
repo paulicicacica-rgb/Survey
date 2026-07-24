@@ -11,12 +11,10 @@ export type PageMeta = {
 // Routes not listed here keep whatever is already baked into index.html.
 export const PAGE_META: Record<string, PageMeta> = {
   "/newself": {
-    title: "Medical Weight Loss Options — newself",
-    description:
-      "Compare telehealth providers offering physician-guided weight loss programs. Free to explore, no commitment.",
-    ogTitle: "Struggling With Weight Loss? See Your Options",
-    ogDescription:
-      "Compare telehealth providers offering physician-guided weight loss programs. Free to explore, no commitment.",
+    title: "newself",
+    description: "See if you qualify. Free to explore, no commitment.",
+    ogTitle: "See If You Qualify",
+    ogDescription: "Free to explore, no commitment. Takes less than a minute.",
     ogUrl: "https://helpmyform.online/newself",
     ogImage: "https://helpmyform.online/images/newself-hero.png",
   },
