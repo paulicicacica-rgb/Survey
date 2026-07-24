@@ -4,6 +4,7 @@ export type PageMeta = {
   ogTitle: string;
   ogDescription: string;
   ogUrl: string;
+  ogImage?: string;
 };
 
 // Per-route overrides for <title>/description/OG/Twitter tags.
@@ -17,11 +18,12 @@ export const PAGE_META: Record<string, PageMeta> = {
     ogDescription:
       "Compare telehealth providers offering physician-guided weight loss programs. Free to explore, no commitment.",
     ogUrl: "https://helpmyform.online/newself",
+    ogImage: "https://helpmyform.online/images/newself-hero.png",
   },
 };
 
 export function injectMeta(html: string, meta: PageMeta): string {
-  return html
+  let result = html
     .replace(/<title>[\s\S]*?<\/title>/, `<title>${meta.title}</title>`)
     .replace(/(<meta name="description" content=")[^"]*(")/, `$1${meta.description}$2`)
     .replace(/(<meta property="og:url" content=")[^"]*(")/, `$1${meta.ogUrl}$2`)
@@ -29,4 +31,13 @@ export function injectMeta(html: string, meta: PageMeta): string {
     .replace(/(<meta property="og:description" content=")[^"]*(")/, `$1${meta.ogDescription}$2`)
     .replace(/(<meta name="twitter:title" content=")[^"]*(")/, `$1${meta.ogTitle}$2`)
     .replace(/(<meta name="twitter:description" content=")[^"]*(")/, `$1${meta.ogDescription}$2`);
+
+  if (meta.ogImage) {
+    result = result
+      .replace(/(<meta property="og:image" content=")[^"]*(")/, `$1${meta.ogImage}$2`)
+      .replace(/(<meta property="og:image:secure_url" content=")[^"]*(")/, `$1${meta.ogImage}$2`)
+      .replace(/(<meta name="twitter:image" content=")[^"]*(")/, `$1${meta.ogImage}$2`);
+  }
+
+  return result;
 }
