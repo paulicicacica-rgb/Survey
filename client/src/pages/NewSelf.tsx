@@ -2,6 +2,9 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Star, Check, ArrowRight, Shield, Clock, Users, HeartPulse, Pill, Sparkles } from "lucide-react";
 
+const AFFILIATE_LINK =
+  "https://afflat3e1.com/trk/lnk/8613E3A5-B445-46B2-BA81-CD563CDBA746/?o=32359&c=918277&a=798445&k=4D4B4D5ECC2D9D1C8A7E83017644E570&l=38108&s1=ns";
+
 const doctors = [
   { name: "Dr. Sarah Chen", credential: "MD, Internal Medicine", specialty: "Weight Management" },
   { name: "Dr. James Rodriguez", credential: "MD, Endocrinology", specialty: "Metabolic Health" },
@@ -28,7 +31,7 @@ export default function NewSelf() {
           </div>
           <Button
             className="bg-primary hover:bg-primary/90 text-white"
-            onClick={() => window.open("https://newself.com", "_blank")}
+            onClick={() => window.open(AFFILIATE_LINK, "_blank")}
           >
             Start Free Visit
           </Button>
@@ -86,7 +89,7 @@ export default function NewSelf() {
                 <Button
                   size="lg"
                   className="bg-accent hover:bg-accent/90 text-white font-semibold text-lg px-8 py-6 rounded-lg shadow-lg hover:shadow-xl transition-all"
-                  onClick={() => window.open("https://newself.com", "_blank")}
+                  onClick={() => window.open(AFFILIATE_LINK, "_blank")}
                 >
                   Start My Free Visit <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
@@ -197,7 +200,7 @@ export default function NewSelf() {
           <Button
             size="lg"
             className="bg-accent hover:bg-accent/90 text-white font-semibold text-lg px-8 py-6"
-            onClick={() => window.open("https://newself.com", "_blank")}
+            onClick={() => window.open(AFFILIATE_LINK, "_blank")}
           >
             Start Free Visit <ArrowRight className="ml-2 w-5 h-5" />
           </Button>
