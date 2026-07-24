@@ -12,9 +12,9 @@ export type PageMeta = {
 export const PAGE_META: Record<string, PageMeta> = {
   "/newself": {
     title: "newself",
-    description: "See if you qualify. Free to explore, no commitment.",
-    ogTitle: "See If You Qualify",
-    ogDescription: "Free to explore, no commitment. Takes less than a minute.",
+    description: "Technology made for you. Get back to the old you.",
+    ogTitle: "Technology Made For You",
+    ogDescription: "Get back to the old you. Free to explore, no commitment.",
     ogUrl: "https://www.helpmyform.online/newself",
     ogImage: "https://www.helpmyform.online/images/newself-hero.png",
   },
