@@ -15,8 +15,8 @@ export const PAGE_META: Record<string, PageMeta> = {
     description: "See if you qualify. Free to explore, no commitment.",
     ogTitle: "See If You Qualify",
     ogDescription: "Free to explore, no commitment. Takes less than a minute.",
-    ogUrl: "https://helpmyform.online/newself",
-    ogImage: "https://helpmyform.online/images/newself-hero.png",
+    ogUrl: "https://www.helpmyform.online/newself",
+    ogImage: "https://www.helpmyform.online/images/newself-hero.png",
   },
 };
 
