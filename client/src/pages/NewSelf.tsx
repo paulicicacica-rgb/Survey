@@ -124,13 +124,14 @@ export default function NewSelf() {
         <div className="container text-center">
           <h2 className="text-4xl font-bold mb-4">Ready to Become Your newself?</h2>
           <p className="text-xl mb-8 text-blue-100">See if you qualify for a provider consultation. No credit card required.</p>
-          <Button
-            size="lg"
-            className="bg-accent hover:bg-accent/90 text-white font-semibold text-lg px-8 py-6"
-            onClick={() => window.open(AFFILIATE_LINK, "_blank")}
+          <a
+            href={AFFILIATE_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-gradient-to-b from-amber-400 to-orange-500 hover:to-orange-600 text-white font-bold text-lg sm:text-xl px-8 sm:px-10 py-4 sm:py-5 rounded-2xl shadow-lg shadow-orange-500/30 transition-all hover:scale-[1.02] hover:shadow-xl"
           >
-            See My Options <ArrowRight className="ml-2 w-5 h-5" />
-          </Button>
+            Find Out More <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6" />
+          </a>
         </div>
       </section>
 
